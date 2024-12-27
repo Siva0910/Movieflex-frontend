@@ -8,7 +8,7 @@ const Signup = () => {
   const [isOtpSent, setIsOtpSent] = useState(false);
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value.toString().trim() });
   };
 
   const handleSignup = async () => {
