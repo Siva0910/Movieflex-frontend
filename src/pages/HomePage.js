@@ -52,8 +52,6 @@ const HomePage = () => {
     }
   };
 
-  console.log(movies);
-
   return (
     <div className="container mt-4">
       <div className="mb-4">
