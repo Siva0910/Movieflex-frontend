@@ -34,7 +34,7 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {fetchMoviesDebounced();}, 500);
+    const timeoutId = setTimeout(() => {fetchMoviesDebounced();}, 300);
     return () => clearTimeout(timeoutId);
   }, [query]);
 
