@@ -24,7 +24,6 @@ const HomePage = () => {
       const data = await fetchMovies(query);
       if (data.statusCode === '200') {
         setMovies(data.data.movieDtos);
-        console.log(data.data.movieDtos);
       }
     } catch (error) {
       
@@ -51,8 +50,6 @@ const HomePage = () => {
       setLoading(false);
     }
   };
-
-  console.log(movies);
 
   return (
     <div className="container mt-4">
